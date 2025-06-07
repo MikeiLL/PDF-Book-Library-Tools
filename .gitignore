@@ -1,3 +1,15 @@
 *.pdf
 lib
 bin
+AfroCarribian/
+Audio/
+Design/
+Graph_Algorithms_Neo4j.epub
+Recipes/
+SageBook/
+Yoga/
+kobo-book-downloader/
+pdf2epub/
+pyvenv.cfg
+share/
+*.epub
