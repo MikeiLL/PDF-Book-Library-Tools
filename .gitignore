@@ -13,3 +13,5 @@ pdf2epub/
 pyvenv.cfg
 share/
 *.epub
+.imported_bookmarks.json
+kobo-highlights
