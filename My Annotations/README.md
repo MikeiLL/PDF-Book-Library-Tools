@@ -15,3 +15,8 @@
  sqlite> .schema Bookmarks
  sqlite> select text from Bookmark where VolumeID='38714108-76da-4cf4-8444-a26cb160d6ee';
  ```
+
+ This might be exactly what we need:
+ `git@github.com:videbar/kobo-highlights.git`
+
+ `.nebo` file format
