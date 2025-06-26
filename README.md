@@ -103,3 +103,6 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 RuntimeError: MPS backend out of memory (MPS allocated: 2.56 GB, other allocations: 3.72 GB, max allowed: 6.80 GB). Tried to allocate 686.00 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
 ```
+
+### Plugins Resource Repo
+[https://github.com/RiccardoSilva42/Kobo-Hacks-Comp](https://github.com/RiccardoSilva42/Kobo-Hacks-Comp)
