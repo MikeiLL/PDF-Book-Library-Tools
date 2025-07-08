@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">2</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">19809ef8-1dc1-4b36-9d94-1695ffceab90</dc:identifier>
+        <dc:title>Black, Brown, &amp; Beige</dc:title>
+        <dc:creator opf:file-as="Africa, Surrealist Writings from &amp; Diaspora, the" opf:role="aut">Surrealist Writings from Africa</dc:creator>
+        <dc:creator opf:file-as="Africa, Surrealist Writings from &amp; Diaspora, the" opf:role="aut">the Diaspora</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.26.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+        <dc:language>en</dc:language>
+        <meta name="calibre:timestamp" content="2025-06-29T18:47:51+00:00"/>
+        <meta name="calibre:title_sort" content="Black, Brown, &amp; Beige"/>
+        <meta name="calibre:user_metadata:#ko_progfloat" content="{&quot;table&quot;: &quot;custom_column_2&quot;, &quot;column&quot;: &quot;value&quot;, &quot;datatype&quot;: &quot;float&quot;, &quot;is_multiple&quot;: null, &quot;kind&quot;: &quot;field&quot;, &quot;name&quot;: &quot;KOReader Precise Progress&quot;, &quot;search_terms&quot;: [&quot;#ko_progfloat&quot;], &quot;label&quot;: &quot;ko_progfloat&quot;, &quot;colnum&quot;: 2, &quot;display&quot;: {&quot;description&quot;: &quot;Reading progress for the book with decimal precision.&quot;, &quot;number_format&quot;: &quot;{:.2f}%&quot;, &quot;decimals&quot;: 2, &quot;web_search_template&quot;: &quot;&quot;}, &quot;is_custom&quot;: true, &quot;is_category&quot;: false, &quot;link_column&quot;: &quot;value&quot;, &quot;category_sort&quot;: &quot;value&quot;, &quot;is_csp&quot;: false, &quot;is_editable&quot;: true, &quot;rec_index&quot;: 22, &quot;#value#&quot;: null, &quot;#extra#&quot;: null, &quot;is_multiple2&quot;: {}}"/>
+        <meta name="calibre:user_metadata:#ko_start" content="{&quot;table&quot;: &quot;custom_column_1&quot;, &quot;column&quot;: &quot;value&quot;, &quot;datatype&quot;: &quot;datetime&quot;, &quot;is_multiple&quot;: null, &quot;kind&quot;: &quot;field&quot;, &quot;name&quot;: &quot;Date KOReader Started&quot;, &quot;search_terms&quot;: [&quot;#ko_start&quot;], &quot;label&quot;: &quot;ko_start&quot;, &quot;colnum&quot;: 1, &quot;display&quot;: {&quot;description&quot;: &quot;Date when the book was started.&quot;, &quot;date_format&quot;: null, &quot;web_search_template&quot;: &quot;&quot;}, &quot;is_custom&quot;: true, &quot;is_category&quot;: false, &quot;link_column&quot;: &quot;value&quot;, &quot;category_sort&quot;: &quot;value&quot;, &quot;is_csp&quot;: false, &quot;is_editable&quot;: true, &quot;rec_index&quot;: 23, &quot;#value#&quot;: null, &quot;#extra#&quot;: null, &quot;is_multiple2&quot;: {}}"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="cover.jpg"/>
+    </guide>
+</package>
