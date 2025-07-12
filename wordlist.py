@@ -6,6 +6,9 @@ Write them to wordlist.md file.
 import os, sqlite3, sys
 from pprint import pprint
 import subprocess
+import requests
+
+url = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
 
 DB_PATH = "/Volumes/KOBOeReader/.kobo/KoboReader.sqlite"
 
@@ -17,7 +20,7 @@ conn = sqlite3.connect(DB_PATH)
 cur = conn.cursor()
 res = cur.execute("select text from Wordlist")
 wordlist = res.fetchall()
-with open("wordlist.md", "w") as f:
+""" with open("wordlist.md", "w") as f:
   for word in [w[0] for w in wordlist]:
     f.write(f"## {word}\n")
     try:
@@ -25,4 +28,34 @@ with open("wordlist.md", "w") as f:
     except subprocess.CalledProcessError as e:
       f.write(f"\n===\n{e.output}\n===\n\n")
       continue
-    f.write(f"\n===\n{p}\n===\n\n")
+    f.write(f"\n===\n{p}\n===\n\n") """
+"""
+Maybe I can get short definitions from the https://api.dictionaryapi.dev/api/v2/entries/en/ api.
+TODO perhaps if no definition found, prompt for language and try that one.
+"""
+with open("wordlist.csv", "w") as f:
+  for word in [w[0] for w in wordlist]:
+    '''Word/Phrase	Translation	Part of Speech	IPA	Definition'''
+    f.write(f"{word}\t")
+    resp = requests.get(url=f"{url}{word}")
+    data = resp.json()
+    if type(data) != list:
+      print('############### No list returned Found')
+      pprint(data)
+      continue
+    print(f"Fetched for: {data[0].get("word", "didn't find: "+word)}\n")
+    try:
+      phonetics = data[0]["phonetics"][0]["text"]
+    except IndexError:
+      phonetics = ""
+    try:
+      pos = data[0]["meanings"][0]["partOfSpeech"]
+    except IndexError:
+      pos = ""
+    try:
+      definition = data[0]["meanings"][0]["definitions"][0]["definition"]
+    except IndexError:
+      print("####################ISSUE###########################")
+      pprint(data)
+      continue
+    f.write(f"{pos}\t{phonetics}\t{definition}\n")
