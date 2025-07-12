@@ -17,8 +17,6 @@ conn = sqlite3.connect(DB_PATH)
 cur = conn.cursor()
 res = cur.execute("select text from Wordlist")
 wordlist = res.fetchall()
-pprint(wordlist)
-print(len(wordlist))
 with open("wordlist.md", "w") as f:
   for word in [w[0] for w in wordlist]:
     f.write(f"## {word}\n")
